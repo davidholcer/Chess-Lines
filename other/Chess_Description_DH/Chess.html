@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="chess-game-moves-line-creator">Chess Game Moves Line Creator</h1>
+<h2 id="independent-programming-project">Independent Programming Project</h2>
+<p><i><b>Description</b></i>: This project will focus on taking chess game data in the form of turns in a .pgn file and transfer them into lines drawn based on the movement of chess pieces.</p>
+<p><b>[Sample Proof of Concept]</b>:<br>
+<br> Sample input (2 lines read from file):<br><br>
+e4 d5 <br><br>
+exd5<br><br>
+Sample description:<br>
+<br> White makes its first move, moving its e pawn to e4. <br><br>
+Black responds by moving its d pawn to d5.<br><br>
+White takes black’s d pawn.<br>
+Sample image output:</p>
+<p><img src="./poc_line.png" alt="alt text"></p>
+<p><b>Goal:</b> The main goal of this project is two-fold.<br>
+<br>1. To interpret a .pgn text file (after slight manipulation) and be able to tell from each line of the text file, what move was made (i.e. determine starting and ending positions of each move). This is done by seeing the current board position after each move by looking at the Forsyth–Edwards Notation of the chess board using an external module “<a href="http://pgnToFen.py">pgnToFen.py</a>”.<br>
+<br>2. To draw lines on a graphical chessboard (from the center of tiles) based on the moves made.</p>
+<p><b>Approach:</b> Pygame will be used as it will allow for the text manipulation python provides alongside with the graphics features of pygame.#<em>Chess Game Moves Line Creator</em></p>
+</div>
+</body>
+
+</html>
