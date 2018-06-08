@@ -13,7 +13,7 @@ Black responds by moving its d pawn to d5.<br>
 White takes black's d pawn.
 Sample image output:
 
-![alt text](./poc_line.png)
+![alt text](./other/Chess_Description_DH/poc_line.png)
 
 <b>Goal:</b> The main goal of this project is two-fold.
 <br>1. To interpret a .pgn text file (after slight manipulation) and be able to tell from each line of the text file, what move was made (i.e. determine starting and ending positions of each move). This is done by seeing the current board position after each move by looking at the Forsyth–Edwards Notation of the chess board using an external module "pgnToFen.py".
