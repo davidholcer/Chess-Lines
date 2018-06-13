@@ -1,15 +1,15 @@
 #this will get the moves from the .pgn file.
-from fenToArray import fenToArray
-from textToFen import textToFen
+#from fenToArray import fenToArray
+#from textToFen import textToFen
 
 import sys
 sys.path.append("./pgnToFen-master")
-import pgnToFen 
+import pgnToFen
 
 def movesMade(filename):
     #opens .pgn file
     lines = []                 # Declare an empty list named "lines"
-    with open ('./samples/%s'%filename, 'rt') as in_file:  # Open file lorem.txt for reading of text data.
+    with open ('./pgn/%s'%filename, 'rt') as in_file:  # Open file lorem.txt for reading of text data.
         for line in in_file:  # For each line of text in in_file, where the data is named "line",
             lines.append(line.rstrip('\n'))   # add that line to our list of lines, stripping newlines.
     #gets the part after the newline

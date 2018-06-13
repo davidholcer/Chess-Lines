@@ -1,8 +1,6 @@
 import sys
 sys.path.append("./pgnToFen-master")
 
-
-
 import pgnToFen # assumes you have pgntofen.py in the same directory, or you know how to handle python modules.
 
 def textToFen(PGNMoves):

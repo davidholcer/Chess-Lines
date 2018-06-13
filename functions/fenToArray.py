@@ -30,5 +30,3 @@ def fenToArray(fen):
     c=StringIO(board)
     bArray=np.loadtxt(c, delimiter=',')#,unpack=True)
     return (bArray)
-
-#print (fenArray(fen))
