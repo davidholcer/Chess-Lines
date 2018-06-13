@@ -14,7 +14,7 @@ from io import StringIO #used to make string into array
 
 
 #this will get the moves from the .pgn file.
-def movesMade(filename):
+def movesMade(filename,space):
     #opens .pgn file
     lines = []                 # Declare an empty list named "lines"
     with open ('./pgn/%s'%filename, 'rt') as in_file:  # Open file lorem.txt for reading of text data.
@@ -23,7 +23,10 @@ def movesMade(filename):
     #gets the part after the newline
     moves=lines[(lines.index('')+1) :]
     #seperates moves by period after joining them as one array
-    moves=' '.join(moves).split('. ')[1:]
+    if space:
+        moves=' '.join(moves).split('. ')[1:]
+    else:
+        moves=' '.join(moves).split('.')[1:]
     #loops over each move, taking only the first 2 moves and then joining them as one text.
     c=0
     while c<len(moves):
@@ -76,8 +79,8 @@ def fenToArray(fen):
 
 
 #gets array and from that extracts the pos of the unique elements for all moves.
-def fileToPos (filename):
-    moves=movesMade(filename)
+def fileToPos (filename,space):
+    moves=movesMade(filename,space)
     #start from empty moves, continually adds to moves
     totalmoves=''
     #gets starting array
