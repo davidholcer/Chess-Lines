@@ -1,5 +1,5 @@
 # *Chess Game Moves Line Creator*
-##Independent Programming Project
+## Independent Programming Project
 
 <i><b>Description</b></i>: This project will focus on taking chess game data in the form of turns in a .pgn file and transfer them into lines drawn based on the movement of chess pieces.
 
