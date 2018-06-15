@@ -16,7 +16,7 @@ pg.init() #initialize pg
 
 #different modes
 #black, regular, green
-mode="black"
+mode="regular"
 # Set up the colors.
 #WHITE=hsv2rgb(1,0, 1),
 #WHITE=(255,255,255,0.5)
@@ -38,7 +38,7 @@ elif mode=="green":
 BLACK= (0,0,0)
 
 #board size
-tile_size = 140
+tile_size = 70
 length=10*tile_size
 width=10*tile_size
 
